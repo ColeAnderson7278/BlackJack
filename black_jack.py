@@ -43,11 +43,8 @@ def card_total(hand):
 
 
 def dealer_decide(dealer, deck):
-    if card_total(dealer) >= 17:
-        return card_total(dealer)
-    if card_total(dealer) < 17:
+    while card_total(dealer) < 17:
         dealer.append(deck.pop())
-        return card_total(dealer)
 
 
 def do_you_hit(player, deck):
