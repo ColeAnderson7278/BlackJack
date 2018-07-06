@@ -14,3 +14,11 @@ def test_card_total():
     assert card_total(['Ace', 10, 9]) == (20)
     assert card_total([5, 2, 3, 7, 4]) == (21)
     assert card_total([9, 3, 10]) == (22)
+
+
+def test_is_digit():
+    assert is_digit('2323') == True
+    assert is_digit('Not A Number') == False
+    assert is_digit('Nope3') == False
+
+def test
