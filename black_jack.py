@@ -45,7 +45,8 @@ def betting_math(player_money, pot):
         elif int(amount) <= int(player_money):
             player_money = player_money - int(amount)
             pot = int(amount) * 2
-            print('\nYour Wallet:${} Pot:${}\n'.format(player_money, pot))
+            print('\nYour Wallet:${} Pot:${}\n'.format(player_money,
+                                                       (pot + 40)))
             return
 
 
